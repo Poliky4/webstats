@@ -1,0 +1,22 @@
+{
+  "name": "webstats",
+  "version": "1.0.0",
+  "description": "A simple web service to receive web site data and store it.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Poliky4/webstats.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Poliky4/webstats/issues"
+  },
+  "homepage": "https://github.com/Poliky4/webstats#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
