@@ -24,8 +24,8 @@ app.post('/webstats', (req, res) => {
     });
 });
 
-app.listen(1337, _ => { // replace with PORT
-    console.log('Webstats starting at port 1337 on', new Date().toUTCString());
+app.listen(PORT, _ => {
+    console.log(`Webstats starting at port ${PORT} on`, new Date().toUTCString());
 });
 
 function Utils(){
