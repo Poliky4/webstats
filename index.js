@@ -3,16 +3,16 @@ const express = require('express');
 const app = express();
 
 const prod = process.argv[2] === 'prod';
-const PORT = prod ? '443' : '1337'
+const PORT = '1337'
 
 const utils = new Utils();
 
 if(prod) app.use(express.static('static'));
 
 // Returns requested webstats or all?
-// app.get('/webstats', (req, res) => {
-//     res.send('Eyo!');
-// });
+app.get('/webstats', (req, res) => {
+    res.send('Eyo!');
+});
 
 // Stores received webstats
 app.post('/webstats', (req, res) => {
@@ -29,7 +29,6 @@ app.listen(PORT, _ => {
 });
 
 function Utils(){
-    
     function getHttpData(req){
         return new Promise((resolve, reject) => {
             let dataStr = '';
