@@ -4,7 +4,8 @@
   "description": "A simple web service to receive web site data and store it.",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js dev",
+    "prod": "node index.js prod"
   },
   "repository": {
     "type": "git",
